@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 02, 2023 at 06:24 AM
+-- Generation Time: Aug 02, 2023 at 07:24 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -18,42 +18,42 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_arsyyv`
+-- Database: `db_arsdyytt`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_siswaa`
+-- Table structure for table `tb_siswaar`
 --
 
-CREATE TABLE `tb_siswaa` (
+CREATE TABLE `tb_siswaar` (
   `NISN` int(11) NOT NULL,
-  `nama` varchar(50) NOT NULL,
+  `nama` varchar(100) NOT NULL,
   `alamat` text NOT NULL,
   `jenis_kelamin` enum('L','P') NOT NULL,
-  `jurusan` enum('RPL','TKJ','TEI','TSM','TKR') NOT NULL
+  `jurusan` enum('RPL','TKJ','TKR','TSM','TKR') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tb_siswaa`
+-- Dumping data for table `tb_siswaar`
 --
 
-INSERT INTO `tb_siswaa` (`NISN`, `nama`, `alamat`, `jenis_kelamin`, `jurusan`) VALUES
-(1, 'MUHAMMAD ARSY INDERA P.', 'JL. SUMBER', 'L', 'RPL'),
-(2, 'MUHAMMAD KELVIN H.', 'JL. SENGRENG', 'L', 'TKJ'),
-(3, 'MUHAMMAD DAVIN A.', 'JL. KERAMAT', 'L', 'TEI'),
-(4, 'TAUFIK NUR A.', 'JL.SLOROK', 'L', 'RPL'),
-(5, 'DIMAS VALENTINO', 'JL. KAWI', 'L', 'TEI');
+INSERT INTO `tb_siswaar` (`NISN`, `nama`, `alamat`, `jenis_kelamin`, `jurusan`) VALUES
+(1, 'arsy', 'jl.sumber', 'L', 'RPL'),
+(2, 'risky', 'jl. pepen', 'L', 'TKR'),
+(3, 'dimas', 'jl.kawi', 'L', 'RPL'),
+(4, 'kevin', 'jl. sengreng', 'L', 'TKJ'),
+(5, 'davin', 'jl. tanen', 'L', 'TKJ');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tb_siswaa`
+-- Indexes for table `tb_siswaar`
 --
-ALTER TABLE `tb_siswaa`
+ALTER TABLE `tb_siswaar`
   ADD PRIMARY KEY (`NISN`);
 
 --
@@ -61,9 +61,9 @@ ALTER TABLE `tb_siswaa`
 --
 
 --
--- AUTO_INCREMENT for table `tb_siswaa`
+-- AUTO_INCREMENT for table `tb_siswaar`
 --
-ALTER TABLE `tb_siswaa`
+ALTER TABLE `tb_siswaar`
   MODIFY `NISN` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
